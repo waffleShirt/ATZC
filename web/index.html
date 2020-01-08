@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- spacetime -->
+    <script src="https://unpkg.com/spacetime"></script>
+    <script src="https://unpkg.com/spacetime-geo"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Time Zone 1</h1>
+    <input type="text" id="tz1">
+    <p>TZ1 Name: <span id="tz1Name"></span></p>
+    <p>TZ1 Time: <span id="tz1time">1:00pm</span></p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <input type="range" min="-720" max="720" value="0" id="todslider">
+    <p id="sliderValue">0</p>
+    <p>Put a big ol' swap button here</p>
+
+    <br>
+
+    <h1>Time Zone 2</h1>
+    <input type="text" id="tz2">
+    <p>TZ2 Name: <span id="tz2Name"></span></p>
+    <p>TZ2 Time: <span id="tz2time">1:00pm</span></p>
+
+    <!-- Place Autocomplete-->
+    <script type="text/javascript" src="scripts/autocomplete.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHenjijGq10yu852UxwVYc6e4Wp_5LAck&libraries=places&callback=initAutocomplete"></script>
+</body>
+</html>
