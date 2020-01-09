@@ -1,0 +1,10 @@
+.vert-line:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+    bottom: 10%;
+    left: 50%;
+    border-left: 1px solid black;
+    transform: translate(-50%);
+  }
